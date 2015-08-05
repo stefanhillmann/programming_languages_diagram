@@ -84,6 +84,13 @@ digraph programming_languages {
   { rank = same; 1958; "ALGOL 58"}
   { rank = same; 1958; "IPL V"}
 
+  { rank = same; 1959; "FACT"}
+  { rank = same; 1959; "COBOL (concept)"}
+  { rank = same; 1959; "JOVIAL"}
+  { rank = same; 1959; "LISP"}
+  { rank = same; 1959; "MAD"}
+  { rank = same; 1959; "TRAC (concept)"}
+
   /*{ rank = same; 1969; "B"}*/
 
   /*{ rank = same; 1972; "C"}*/
