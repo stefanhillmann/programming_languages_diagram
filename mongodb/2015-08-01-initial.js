@@ -4,6 +4,9 @@ db = conn.getDB("ProgrammingLanguages")
 lang = db['languages']
 lang.drop()
 
+// TODO:
+// * designed_by zu developed_by
+
 // root node, mainly as virtual starting point
 lang.insert({id: 'past', name: 'Past'})
 
@@ -43,5 +46,24 @@ lang.insert({id: 'plankalkuel_concept_published', name: 'Plankalkül (concept pu
 year: 1948, designed_by: ['Konrad Zuse'], influenced_by: ['plankalkuel_concept']})
 
 lang.insert({id: 'brief_code', name: 'Brief Code', year: 1949,
-designed_by: ['John Mauchly', 'William F. Schmitt'],
+designed_by: ['John Mauchly', 'William F. Schmidt'],
 influenced_by: ['eniac_short_code']})
+
+// ### 1950 ###
+
+lang.insert({id: 'short_code', name: 'Short Code', year: 1950,
+designed_by: ['William F. Schmidt', 'Albert B. Tonik', 'J.R. Logan'],
+influenced_by: ['Brief Code']})
+
+lang.insert({id: 'birkbeck_assembler', name: 'Birkbeck Assembler', year: 1950,
+designed_by: ['Kathleen Booth'], influenced_by: ['arc_assembly']})
+
+lang.insert({id: 'superplan', name: 'Superplan', year: 1951,
+designed_by: ['Heinz Rutishauser'], influenced_by: ['plankalkuel_concept_published']})
+
+lang.insert({id: 'algae', name: 'ALGAE', year: 1951,
+designed_by: ['Edward A. Voorhees', 'Karl Balke'], influenced_by: ['past']})
+
+lang.insert({id: 'intermediate_programming_language',
+name: 'Intermediate Programming Language',
+year: 1951, designed_by: ['Arthur Bruks'], influenced_by: ['short_code']})
